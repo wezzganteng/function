@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="X" />
+    <button onclick="lock()">hitung</button>
+    <p id="1"></p>
+    <script>
+      function lock() {
+        var a = document.getElementById("X").value;
+
+        if (a >= 90 && a <= 100) {
+          document.getElementById("1").innerHTML = "Nilai Grade A";
+        } else if (a >= 80 && a <= 89) {
+          document.getElementById("1").innerHTML = "Nilai Grade B";
+        } else if (a >= 70 && a <= 79) {
+          document.getElementById("1").innerHTML = "Nilai Grade C";
+        } else if (a >= 50 && a <= 69) {
+          document.getElementById("1").innerHTML = "Nilai Grade D";
+        } else if (a >= 0 && a <= 49) {
+          document.getElementById("1").innerHTML = "Nilai Grade E";
+        } else {
+          alert("nilai tidak diketahui");
+        }
+      }
+    </script>
+  </body>
+</html>
